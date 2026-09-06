@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendation Web Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h2>TravelBloom</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Enter keyword (e.g., beach, temple, country)...">
+            <button id="btnSearch">Search</button>
+            <button id="btnClear">Clear</button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Explore Dream Destinations</h1>
+        <p>Find the best beaches, historical temples, and amazing countries for your next vacation.</p>
+        <div id="results" class="results-container"></div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to helping travelers discover the most beautiful places around the world.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form onsubmit="event.preventDefault(); alert('Message sent!');">
+            <input type="text" placeholder="Name" required><br><br>
+            <input type="email" placeholder="Email" required><br><br>
+            <textarea placeholder="Message" required></textarea><br><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
